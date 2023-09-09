@@ -5,9 +5,9 @@ import Express from "express";
 const app = Express();
 
 import { expressLogger } from "@utils/expressLogger.js";
-import { loadRoutes } from "./src/services/routes.js";
-import { MongooseService } from "./src/services/mongoose.js";
-import Logger from "./src/services/logger.js";
+import { loadRoutes } from "@services/routes.js";
+import { MongooseService } from "@services/mongoose.js";
+import Logger from "@services/logger.js";
 
 const logger = new Logger();
 

@@ -1,5 +1,5 @@
 import express from "express";
-import { UserMiddleware } from "../middlewares/express.middleware.js";
+import { UserMiddleware } from "@middlewares/express.middleware.js";
 const router = express.Router();
 
 export class MainRouter {

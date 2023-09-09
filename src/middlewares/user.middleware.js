@@ -1,8 +1,8 @@
 import jwt from "jsonwebtoken";
 
-import { User } from "../models/user.model.js";
+import { User } from "@models/user.model.js";
 
-import Logger from "../services/logger.js";
+import Logger from "@services/logger.js";
 const logger = new Logger();
 
 export async function GetUserWithToken(token) {

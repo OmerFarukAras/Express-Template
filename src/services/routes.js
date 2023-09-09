@@ -1,5 +1,5 @@
-import { MainRouter } from "../routes/main.route.js";
-import { UserRouter } from "../routes/user.route.js";
+import { MainRouter } from "@routes/main.route.js";
+import { UserRouter } from "@routes/user.route.js";
 export function loadRoutes(app, logger) {
   let routes = [new MainRouter(), new UserRouter()];
 

@@ -1,20 +1,16 @@
 import express from "express";
 const router = express.Router();
 
-import { RegisterController } from "../controllers/userRegister.controller.js";
-import { LoginController } from "../controllers/userLogin.controller.js";
+import { RegisterController } from "@controllers/userRegister.controller.js";
+import { LoginController } from "@controllers/userLogin.controller.js";
 
 import {
   CreateUser,
   GetUserWithEmail,
-  GetUserWithID,
   GetUserWithUsername,
-  ValidateToken,
   CreateToken,
-  getUserWithoutCreditentials,
   GetUserWithToken,
-} from "../middlewares/user.middleware.js";
-import { UserMiddleware } from "../middlewares/express.middleware.js";
+} from "@middlewares/user.middleware.js";
 
 export class UserRouter {
   path = "/api/user";

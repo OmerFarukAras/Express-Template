@@ -1,4 +1,4 @@
-import { GetUserWithToken } from "./user.middleware.js";
+import { GetUserWithToken } from "@middlewares/user.middleware.js";
 
 export function UserMiddleware(req, res, next) {
   if (req.headers["x-access-token"] == undefined)
